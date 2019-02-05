@@ -5,10 +5,8 @@ public class MoneyTest {
     @Test()
     public void testMultiplication() {
         Dollar five = new Dollar(5);
-        Dollar product = five.times(2);
-        Assert.assertEquals(10, product.amount);
-        product = five.times(3);
-        Assert.assertEquals(15, product.amount);
+        Assert.assertEquals(new Dollar(10), five.times(2));
+        Assert.assertEquals(new Dollar(15), five.times(3));
     }
 
     @Test()
